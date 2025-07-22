@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* intestazione */
@@ -20,6 +21,7 @@ header {
 .container {
     width: 80%;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .row {
@@ -30,13 +32,48 @@ header {
 }
 
 .column {
-    width: calc((100% / 3) - (20px / 3));
+
+    /* debug 
     background-color: blueviolet;
-    height: 150px;
-    border: 1px solid black;
+    height: 150px; 
+    border: 1px solid black; */
+    width: calc((100% / 3) - (20px / 3));
+    position: relative
 }
 
-/*.column img {
+.column img {
 max-width: 100%;
 }
 
+
+/* etichette */
+
+.label-discount {
+    background-color: red;
+    color: white;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top:90%;
+    left: 0;
+}
+
+.label-sostenibilita {
+    background-color: green;
+    color: white;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 90%;
+    left: 13%;
+}
+
+#left {
+    position: absolute;
+    top: 90%;
+    left: 0;
+}
