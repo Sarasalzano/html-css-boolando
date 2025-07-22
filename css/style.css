@@ -16,6 +16,8 @@ ul {
 a {
      text-decoration: none;
      color: white;
+     cursor: pointer;
+     padding-right: 10px;
 }
 
 /* intestazione */
@@ -26,6 +28,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .container-intestazione {
@@ -93,6 +96,7 @@ nav {
 
 .column img {
 max-width: 100%;
+cursor: pointer;
 }
 
 
@@ -136,4 +140,20 @@ max-width: 100%;
 .descrizione {
     margin-bottom: 30px;
 }
+
+/* immagini hover */
+
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+} 
+
+.container:hover .hover {
+    display: block;
+}
+
+
 
