@@ -38,7 +38,7 @@ header {
     height: 150px; 
     border: 1px solid black; */
     width: calc((100% / 3) - (20px / 3));
-    position: relative
+    position: relative;
 }
 
 .column img {
@@ -48,6 +48,7 @@ max-width: 100%;
 
 /* etichette */
 
+
 .label-discount {
     background-color: red;
     color: white;
@@ -56,7 +57,7 @@ max-width: 100%;
     font-size: 12px;
     font-weight: bold;
     position: absolute;
-    top:90%;
+    top: 80%;
     left: 0;
 }
 
@@ -68,12 +69,21 @@ max-width: 100%;
     font-size: 12px;
     font-weight: bold;
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 13%;
 }
 
 #left {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 0;
+}
+
+.discount-item {
+    color: red;
+    font-weight: bold;
+}
+
+.descrizione {
+    margin-bottom: 30px;
 }
