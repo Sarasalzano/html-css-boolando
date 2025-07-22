@@ -7,13 +7,56 @@
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+}
+
 /* intestazione */
 
 header {
     background-color: orange;
     height: 40px;
+}
+
+.container-intestazione {
+
+/* debug     
+    background-color: aquamarine;
+    border: 1px solid black;*/
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    align-items: center;   
+}
+
+nav {
+
+/* debug 
+    border: 1px solid black; */
+    width: 15%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+#logo-header {
+
+/* debug 
+    border: 1px solid black; */
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.container-intestazione img {
+    height: 100%;
 }
 
 /* contenuto principale */
@@ -33,7 +76,7 @@ header {
 
 .column {
 
-    /* debug 
+/* debug 
     background-color: blueviolet;
     height: 150px; 
     border: 1px solid black; */
@@ -47,7 +90,6 @@ max-width: 100%;
 
 
 /* etichette */
-
 
 .label-discount {
     background-color: red;
@@ -87,3 +129,4 @@ max-width: 100%;
 .descrizione {
     margin-bottom: 30px;
 }
+
