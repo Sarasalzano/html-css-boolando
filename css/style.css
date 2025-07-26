@@ -10,7 +10,7 @@
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 a {
@@ -23,8 +23,8 @@ a {
 /* intestazione */
 
 header {
-    background-color: orange;
-    height: 40px;
+    background-color: #FF6900;
+    height: 60px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -33,30 +33,30 @@ header {
 
 .container-intestazione {
 
-/* debug     
+/* debug    
     background-color: aquamarine;
-    border: 1px solid black;*/
+    border: 1px solid black; */
     width: 80%;
     height: 40px;
     margin: 0 auto;
+    padding-top: 20px;
     display: flex;
     align-items: center;   
 }
 
 nav {
 
-/* debug 
-    border: 1px solid black; */
+/* debug     
+    border: 1px solid black;*/
     width: 15%;
     height: 100%;
-    padding-top: 10px;
 }
 
 #logo-header {
 
 /* debug 
     border: 1px solid black; */
-    height: 100%;
+    height: 30px;
     flex-grow: 1;
     text-align: center;
 }
@@ -72,6 +72,7 @@ nav {
     margin: 0 auto;
     top: 5%;
     left: 10%;
+    margin-top: 100px;
 }
 
 .row {
@@ -99,16 +100,21 @@ nav {
 
 /* etichette */
 
+.labels {
+    display: flex;
+    position: absolute;
+    top: 535px;
+    left: 0;
+}
+
 .label-discount {
     background-color: red;
     color: white;
     width: fit-content;
     padding: 5px 10px;
+    margin-right: 5px;
     font-size: 12px;
     font-weight: bold;
-    position: absolute;
-    top: 80%;
-    left: 0;
 }
 
 .label-sostenibilita {
@@ -118,20 +124,13 @@ nav {
     padding: 5px 10px;
     font-size: 12px;
     font-weight: bold;
-    position: absolute;
-    top: 80%;
-    left: 13%;
 }
 
-#left {
-    position: absolute;
-    top: 80%;
-    left: 0;
-}
 
 .discount-item {
     color: red;
     font-weight: bold;
+    left: 0;
 }
 
 .descrizione {
@@ -148,7 +147,7 @@ nav {
     display: none;
 } 
 
-.container:hover .hover {
+.row :hover .hover {
     display: block;
 }
 
@@ -156,7 +155,7 @@ nav {
 /* footer */
 footer {
     background-color: black;
-    height: 60px;
+    height: 90px;
     display: flex;
     justify-content: center;
 }
@@ -174,7 +173,8 @@ footer {
 }
 
 .social li {
-    margin-top: 3px;
+    margin-top: 5px;
+    margin-right: 0;
 }
 
 h4 {
